@@ -1,0 +1,59 @@
+<!DOCTYPE HTML> 
+<HTML> 
+<HEAD>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+function testResults (form) {
+    var TestVar = form.pid.value;
+   var TestVar1 = form.pname.value;
+   var TestVar2= form.Pprice.value;
+   var TestVar3 = form.Qty.value;
+   
+  
+      alert ("Id: " + TestVar +"name: " + TestVar1+"Price: " + TestVar2+"Qty: " + TestVar3);
+}
+
+</SCRIPT>
+
+
+ <STYLE> 
+ background-color:#FFEBCD; 
+ } .autostyle2{ color:red; font-size:20px; text-align:center; } 
+ </STYLE> 
+ </HEAD> 
+ <BODY> 
+ <div STYLE="padding-left:80px; margin-left:80px; HEIGHT:95px; width:800px;">
+ <form NAME="myform" method="GET">
+
+ <TABLE> 
+ <body BACKGROUND ="table5.png"></body>
+ <TR class="autostyle2"> 
+<h1><b><i><center><B>Product Detail</B></center></i></b></h1> </TR> 
+ <TR> <br> 
+ <TD WIDTH="150%" COLSPAN="2"> </TD> </TR> 
+  <div style="margin-left:300px; color:black; font-family:Times New Roman; font-size:220%; padding-left:80px;">  
+ <TR> <TD><LABEL for="name">Product id:</LABEL></ TD> 
+ <TD><INPUT type="text" name="pid" ID="name" placeholder="Enter ProductId" required></TD> 
+ </TR> 
+  <TR> 
+ <TD><LABEL for="name">Product name Name:</LABEL></ TD> 
+ <TD><INPUT type="text" name="pname" ID="name" placeholder="Enter product name" required></TD> 
+ </TR>
+
+  
+
+ <TD><LABEL for="number">Product Price:</LABEL></TD> 
+ <TD><INPUT type="tel" name="Pprice" ID="number" placeholder="Enter price" required></TD></TR>
+<TR> 
+ <TD><LABEL for="address">Quantity:</LABEL></TD> 
+ <TD><INPUT type="add" name="Qty" ID="number" placeholder="Enter Quantity" required></TD></TR> 	
+ </TABLE>
+<BR><BR><BR><BR><BR><BR><BR>
+ 
+<INPUT TYPE="button" NAME="button" Value="Submit" onClick="testResults(this.form)"> </td></tr>
+ </div>
+ </FORM> 
+ </BODY> </div>
+ </HTML> 
